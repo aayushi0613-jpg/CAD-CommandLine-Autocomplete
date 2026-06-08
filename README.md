@@ -22,11 +22,15 @@ The autocomplete engine supports exact matching, prefix matching, and mid-string
 * Reduces typing effort and improves command discovery.
 
 ### Example :
+
 Input: LIN
 
 Suggestions:
+
 LINE
+
 LINEAR
+
 LINETYPE
 
 ---
@@ -35,9 +39,12 @@ LINETYPE
 
 The system supports command aliases, allowing users to execute commands using shorter keywords.
 
-### Example
+### Example:
+
 L → LINE
+
 C → CIRCLE
+
 Aliases are dynamically loaded and included in autocomplete suggestions.
 
 ---
@@ -46,8 +53,10 @@ Aliases are dynamically loaded and included in autocomplete suggestions.
 
 The autocomplete engine can also search and suggest system variables.
 
-### Example
+### Example:
+
 ORTHOMODE
+
 SNAPMODE
 
 This enables quick access to application settings and configurations.
@@ -58,11 +67,14 @@ This enables quick access to application settings and configurations.
 
 Unlike traditional autocomplete systems, this implementation supports searching from the middle of command names.
 
-### Example
+### Example:
+
 Input: DIM
 
 Results:
+
 DIMLINEAR
+
 ALIGNEDDIMENSION
 
 This improves usability when users remember only part of a command.
@@ -94,7 +106,9 @@ The system communicates with the CAD application and triggers command execution 
 ## Undo and Redo Support
 
 Integrated keyboard shortcuts:
+
 Ctrl + Z → Undo
+
 Ctrl + Y → Redo
 
 This provides a familiar workflow for users.
@@ -104,8 +118,11 @@ This provides a familiar workflow for users.
 ## Copy, Cut and Paste Integration
 
 Supports:
+
 Ctrl + C
+
 Ctrl + X
+
 Ctrl + V
 
 Custom clipboard handling ensures smooth integration with the application's shortcut framework.
